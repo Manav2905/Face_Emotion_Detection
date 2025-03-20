@@ -3,6 +3,8 @@ import cv2
 import numpy as np
 from tensorflow.keras.models import load_model
 import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"  # Disable GPU usage
+import tensorflow as tf
 
 app = Flask(__name__)
 
